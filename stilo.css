@@ -5,78 +5,37 @@
     Description:
         Purpose of the stylesheet follows.
 */
+.i2Style{
+font:bold 15px Arial, "Comic Sans MS", cursive, sans-serif;
+font-style:normal;
+color:#ffffff;
+background:#000000;
+border:2px inset #5f6070;
+border-radius:10px 10px 10px 10px;
+-moz-border-radius:10px 10px 10px 10px;
+-webkit-border-radius:10px 10px 10px 10px;
+width:9px;
+padding:5px 20px;
+cursor:pointer;
+margin:0 auto;
+}
+.i2Style:active{
+cursor:pointer;
+position:relative;
+top:2px;
+}
+
 
 table {
-    border: 10px solid red;
-}
-
-input[type = button]{
-    width: 35px;
-}
-
-td {
-    alignment-baseline: central;
-}
-.linha1 {
-    font-weight: bold;
-}
-
-.botao_estilo1{
-  font:bold 24px Arial, Helvetica, sans-serif;
-  font-style:normal;
-  color:#000000;
-  background:#f2f2f2;
-  border:0px solid #ffffff;
-  text-shadow:-1px 1px 0px #fff;
-  box-shadow:0px 0px 7px #000000;
-  -moz-box-shadow:0px 0px 7px #000000;
-  -webkit-box-shadow:0px 0px 7px #000000;
-  border-radius:20px 20px 20px 20px;
-  -moz-border-radius:20px 20px 20px 20px;
-  -webkit-border-radius:20px 20px 20px 20px;
-  width:67px;
-  padding:12px 43px;
-  cursor:pointer;
-  margin:0 auto;
-}
-.botao_estilo1:active{
-  cursor:pointer;
-  position:relative;
-  top:2px;
-}
-
-.botao_estilo2{
-  font:normal 15px "Comic Sans MS", cursive, sans-serif;
-  font-style:normal;
-  color:#ffffff;
-  background:#000000;
-  border:6px inset #bbb;
-  text-shadow:-5px 1px 0px #25444d;
-  box-shadow:-8px 1px 10px #d1cfd1;
-  -moz-box-shadow:-8px 1px 10px #d1cfd1;
-  -webkit-box-shadow:-8px 1px 10px #d1cfd1;
-  border-radius:10px 10px 10px 10px;
-  -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;
-  width:7px;
-  padding:0px 15px;
-  cursor:pointer;
-  margin:0 auto;
-}
-
-.botao_estilo2:active{
-  cursor:pointer;
-  position:relative;
-  top:2px;
-}
-
-
-body {
     background: black;
 }
 
 #calculo {
     text-align: right;
+    font-family: "lcd";
+    color: black;
+    font-size: 17px;
+    background: #e3e3e3;
 }
 
 @font-face {

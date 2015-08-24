@@ -1,50 +1,51 @@
 <html>
   <head>
     <script type = "text/javascript" src = "kalkulilo.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "reset.css"/>
+    <!--<link rel = "stylesheet" type = "text/css" href = "reset.css"/> -->
+    <link rel = "stylesheet" type = "text/css" href = "stilo.css"/>
   </head>
   <body> <!--aqui começa o html-->
     <table cellspacing = 0 cellpadding = 2>
       <tr>
         <td colspan = 4>
           <form name = "formulario"><!--aqui foi criado um formulario para a caixa de texto,e um objeto chamado formulario-->
-            <input type="text" id="calculo" value = "0">
+              <input type="text" id = "calculo" disabled = "">
         </td>
       </tr>
       <tr><!--começo da tabela-->
-        <td><input type="button" class = "linha1" value="CE/ON" id="ce" onclick = "limpar();"></td>
-        <td><input type="button" class = "linha1" value="MRC"></td>
-        <td><input type="button" class = "linha1" value="M-"></td> <!--chama a funçao coleta-->
-        <td><input type="button" class = "linha1" value="M+"></td><!--onclick chama a funçao mostra quando clicado-->
+        <td><input type="button" class = "i2Style" value="CE/ON" id="ce" onclick = "limpar();"></td>
+        <td><input type="button" class = "i2Style" value="MRC"></td>
+        <td><input type="button" class = "i2Style" value="M-"></td> <!--chama a funçao coleta-->
+        <td><input type="button" class = "i2Style" value="M+"></td><!--onclick chama a funçao mostra quando clicado-->
       </tr>
       <tr>
-        <td><input type="button" value= "OFF" id = "off" onclick = "desligar();"></td><!--chama a funçao raiz-->
-        <td><input type="button" value= "&radic;" id="raiz_quadrada" onclick="calcular_raiz();"></td><!--chama a funçao raiz-->
-        <td><input type="button" name = "percentual" value = "%"></td>
-        <td><input type="button" value= "&divide;" id = "divisao" onclick="coleta('/');"></td>     
+        <td><input type="button" class = "i2Style" value= "OFF" id = "off" onclick = "desligar();"></td><!--chama a funçao raiz-->
+        <td><input type="button" class = "i2Style" value= "&radic;" id="raiz_quadrada" onclick="calcular_raiz();"></td><!--chama a funçao raiz-->
+        <td><input type="button" class = "i2Style" name = "percentual" value = "%"></td>
+        <td><input type="button" class = "i2Style" value= "&divide;" id = "divisao" onclick="coleta('/');"></td>     
       </tr>
       <tr>
-        <td><input type="button" value = "7" id="botao7" onclick="mostrar(7);"></td><!--onclick chama a funçao mostra quando clicado-->
-        <td><input type="button" value= "8" id="botao8" onclick="mostrar(8);"></td>
-        <td><input type="button" value= "9" id="botao9" onclick="mostrar(9);"></td>
-        <td><input type="button" value= "&times;" id = "multiplicacao" onclick="coletar('*');"></td>
+        <td><input type="button" class = "i2Style" value = "7" id="botao7" onclick="mostrar(7);"></td><!--onclick chama a funçao mostra quando clicado-->
+        <td><input type="button" class = "i2Style" value= "8" id="botao8" onclick="mostrar(8);"></td>
+        <td><input type="button" class = "i2Style" value= "9" id="botao9" onclick="mostrar(9);"></td>
+        <td><input type="button" class = "i2Style" value= "&times;" id = "multiplicacao" onclick="coletar('*');"></td>
       </tr>
       <tr>
-        <td><input type="button" value= "4" id="botao4" onclick="mostrar(4);"></td>
-        <td><input type="button" value= "5" id="botao5" onclick="mostrar(5);"></td>
-        <td><input type="button" value= "6" id="botao6" onclick="mostrar(6);"></td>
-        <td><input type="button" value = "&minus;" id="subtracao" onclick="coletar('-');"></td>
+        <td><input type="button" class = "i2Style" value= "4" id="botao4" onclick="mostrar(4);"></td>
+        <td><input type="button" class = "i2Style" value= "5" id="botao5" onclick="mostrar(5);"></td>
+        <td><input type="button" class = "i2Style" value= "6" id="botao6" onclick="mostrar(6);"></td>
+        <td><input type="button" class = "i2Style" value = "&minus;" id="subtracao" onclick="coletar('-');"></td>
       </tr>
       <tr>
-        <td><input type="button" value= "1" id="botao1" onclick="mostrar(1);"></td>
-        <td><input type="button" value= "2" id="botao2" onclick="mostrar(2);"></td>
-        <td><input type="button" value= "3" id="botao3" onclick="mostrar(3);"></td>
-        <td rowspan="2"><input type="button" value= "&#43;" id="soma" onclick="coletar('+');"></td><!--chama a funçao coleta-->
+        <td><input type="button" class = "i2Style" value= "1" id="botao1" onclick="mostrar(1);"></td>
+        <td><input type="button" class = "i2Style" value= "2" id="botao2" onclick="mostrar(2);"></td>
+        <td><input type="button" class = "i2Style" value= "3" id="botao3" onclick="mostrar(3);"></td>
+        <td rowspan="2"><input class = "i2Style" type="button" value= "&#43;" id="soma" onclick="coletar('+');"></td><!--chama a funçao coleta-->
       </tr>
       <tr>
-        <td><input type="button" value= "0" id="botao0" onclick="mostrar(0);"/></td>
-        <td><input type="button" value= "." name="ponto" id="ponto" onclick = "mostrar('.');"></td>
-        <td><input type="button" value= "=" id = "igual" onclick="calcular();"></td>
+        <td><input type="button" class = "i2Style" value= "0" id="botao0" onclick="mostrar(0);"/></td>
+        <td><input type="button" class = "i2Style" value= "." name="ponto" id="ponto" onclick = "mostrar('.');"></td>
+        <td><input type="button" class = "i2Style" value= "=" id = "igual" onclick="calcular();"></td>
       </tr>
       </form>
    </table>
